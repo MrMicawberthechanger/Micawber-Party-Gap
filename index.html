@@ -13,13 +13,13 @@
 
 <body class="" style="background-color: #E5E5E5;">
     <header>
-        <section>
+        <section class="container">
             <nav class="navbar navbar-expand-lg 
-    d-flex justify-content-center text-black mt-4 mb-4" style="">
+    ">
 
-                <div class="container ">
+                <div class="d-flex justify-content-center text-black mt-4 mb-4 ">
                     <a class="navbar-brand d-flex align-items-center" href="#">
-                        <span class="fs-3 fw-bold">Micawber Party Gap</span> </a>
+                        <span class="fs-2 fw-bold">Micawber Party Gap</span> </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
@@ -50,7 +50,7 @@
 
             </nav>
         </section>
-        <section class="mb-4">
+        <section class="mb-4" style="display: none;">
             <div id="carouselExampleCaptions" class="carousel slide">
                 <div class="carousel-indicators">
                     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
@@ -113,7 +113,7 @@
             </div>
         </section>
     </header>
-    <main class="">
+    <main class="" style="display: none;">
         <section class="container d-flex align-items-center justify-content-center">
 
             <div class="mt-4 me-4 pe-4">
@@ -138,13 +138,13 @@
             <!-- - `.toast-container` for spacing between toasts -->
             <!-- - `top-0` & `end-0` to position the toasts in the upper right corner -->
             <!-- - `.p-3` to prevent the toasts from sticking to the edge of the container  -->
-            <div class="toast-container top-0 end-0 p-3 ">
+            <div class="toast-container top-0  end-0 p-3 ">
 
                 <!-- Then put toasts within -->
                 <div class="   toast fade show" role="alert" aria-live="assertive" aria-atomic="true">
 
-                    <div class="toast-body  d-flex justify-content-evenly border-start border-primary border-5">
-                        <i class="fa-solid fa-gift"></i> See? Just like this.
+                    <div class="toast-body  d-flex justify-content-between border-start border-primary border-5">
+                        <i class="fa-solid fa-gift "></i> <span class="ms-5">See? Just like this.</span>
                         <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
                     </div>
                 </div>
@@ -193,9 +193,14 @@
                 </div>
                 <!-- card-3 -->
                 <div class="card border-0 bg-primary rounded-4 p-2 shadow-lg ">
+                    <span
+                        class="position-absolute top-0 start-80 end-0 pt-2 pb-2 translate-middle badge rounded-pill bg-danger">
+                        Hot
 
+                    </span>
                     <div class="card-body bg-primary text-white bg-image"
                         style="background-image: url(icons/watermark.svg); background-position: right center; background-repeat: no-repeat;">
+
                         <h1 class="card-title fw-bold">$300</h1>
                         <h3 class="card-title fw-bold">Business fair</h3>
                         <p>For most businesses event
@@ -387,8 +392,8 @@
 
         </section>
     </main>
-
-    <footer class=" bg-black mt-5">
+    <!-- footer -->
+    <footer class=" bg-black mt-5" style="display: none;">
         <section class="container ">
             <div class="d-flex align-items-center justify-content-between mt-5 pt-5 mb-2 pb-4">
                 <div class="h-100 d-inline-block ">
@@ -402,6 +407,7 @@
                 </div>
             </div>
         </section>
+
     </footer>
 
 
